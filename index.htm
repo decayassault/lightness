@@ -10,7 +10,7 @@
 		<link rel="icon" href="favicon.svg">
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<meta name="description" content="Лёгкость - персональный блог Ланы Эткиной.">
-		<meta name="keywords" content="лёгкость лана эткина стиль ретро дзен блог сайт читать страница">
+		<meta name="keywords" content="лёгкость лана эткина стиль ретро дзен блог читать by far страница">
 		<style type="text/css">
 			@font-face {
  				font-family: 'Caveat-Medium';
@@ -33,7 +33,7 @@
 			body {
 				height:100%			
 			}
-			h1, body, article, img {
+			h1, body, article, #image {
 				margin:0
 			}
 			h1 {
@@ -55,13 +55,13 @@
   				p {
   					margin:2% 20% 2% 20%
   				}
-  				span {
+  				span, div {
   					margin:0 20% 0 20%
   				}
   				h2 {
   					margin:2% 20% 0 20%
   				}
-  				img {
+  				#image {
   					width:25%
   				}
  			}
@@ -72,10 +72,10 @@
   				p {
   					margin:2% 4% 2% 4%
   				}  			
-  				span {
+  				span, div {
   					margin:0 4% 0 4%
   				}
-  				img {
+  				#image {
   					width:50%
   				}
 			}
@@ -85,7 +85,7 @@
 			h1, h2 {
 				color:#666
 			}
-			p, footer, span {
+			p, footer, span, figcaption {
 				color:#2f4f4f
 			}
 			a {
@@ -94,11 +94,24 @@
 			footer, div, h1 {
 				text-align:center
 			}
-			span, footer, p {
+			span, footer, p, figcaption {
 				font-size:110%
 			}			
 			footer {
 				margin:2% 0 3% 0
+			}
+			figure {
+				display:inline-block;
+				width:33%;
+				margin:0;				
+			}
+			figure img {
+				width: 90%;
+				display:inline-block;
+				height:auto
+			}
+			img {
+				border-radius:5%
 			}
 		</style>
 	</head>
@@ -108,7 +121,7 @@
 			<h2 itemprop="name">Стиль на все времена</h2>
 			<p itemprop="articleBody">Добрый день, любители ретро и те, кто ищут свой стиль, - быть может, именно он станет вашим. Ретро подходит для многих случаев, от делового до повседневно-расслабленного, даже для выхода в "свет", и уместен в любом возрасте. В нём вы найдёте гармонию с собой и ощущение тепла, как в детстве. Ведь ретро - это отсыл в прошлое...</p>
 			<div>
-				<img itemprop="image" src="scale_2400.webp" alt="Вариант одежды в стиле ретро">
+				<img id=image itemprop="image" src="scale_2400.webp" alt="Вариант одежды в стиле ретро">
 			</div>
 			<p itemprop="articleBody">Далеко не все бренды шьют одежду такого плана.&nbsp;<a itemprop="url" href="https://www.byfar.com/" title="Переход на сайт компании By Far">By Far</a>&nbsp;- один из немногих, кто создаёт ретро: модели обуви и сумок, которые подходят под любой образ. "Вдохновлённые 90-ми" - с этой фразы они начали свой творческий путь. Советую присмотреться!</p>
 			<span>30 ноября 2021 года</span>
@@ -117,6 +130,20 @@
 		<article itemscope itemtype="https://schema.org/Article">
 			<h2 itemprop="name">Почему стоит отказаться от иностранных брендов</h2>
 			<p itemprop="articleBody">Добрый день, любители моды и те, кто ищут свой стиль. На самом деле не стоит расстраиваться из-за того, что некоторые бренды ушли от нас, и даже стоит отказаться от них совсем по одной простой причине: они нам совершенно не идут. Чтобы создать правильный образ, необходимо подчеркнуть достоинства российских женщин. Иностранные  же дизайнеры и кутюрье отображают свои традиции, культуру, менталитет и вряд ли догадываются о наших особенностях. Именно поэтому русские женщины никогда не смогут воплотить их задумку. Нам нужно другое: одежда, где прослеживаются национальные черты, подчеркивающая индивидуальность. Но есть и зарубежные марки, с которыми мы имеем много общего. Одна из них -&nbsp;<a itemprop="url" href="https://www.byfar.com/" title="Переход на сайт компании By Far">By Far</a>&nbsp;из Болгарии, с которой мы имеем культурное сходство. Советую присмотреться...</p>
+			<div>
+				<figure>
+					<img itemprop="image" src="hessian_boots.webp" alt="Кожаные ботфорты By Far">
+					<figcaption>Кожаные ботфорты By Far</figcaption>
+				</figure>
+				<figure>
+					<img itemprop="image" src="mules.webp" alt="Кожаные мюли By Far">
+					<figcaption>Кожаные мюли By Far</figcaption>
+				</figure>
+				<figure>
+					<img itemprop="image" src="bags.webp" alt="Кожаные сумки By Far">
+					<figcaption>Кожаные сумки By Far</figcaption>
+				</figure>
+			</div>
 			<span>3 марта 2023 года</span>
 			<meta itemprop="dateModified" content="2023-03-03">
 		</article>
